@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cafe Finder — Madurai</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <h1>☕ Cafe Finder — Madurai</h1>
+    <form id="filters" class="filters">
+      <input id="search" placeholder="Search name, address, tags" />
+      <label class="range">
+        <span>Min rating</span>
+        <input id="minRating" type="range" min="0" max="5" step="0.1" value="0" />
+        <span id="minRatingVal">0.0</span>
+      </label>
+      <input id="radius" type="number" min="0" step="0.5" placeholder="Radius (km)" style="width:110px"/>
+      <select id="sort">
+        <option value="rating_desc">Sort: Rating ↓</option>
+        <option value="rating_asc">Sort: Rating ↑</option>
+        <option value="distance_asc">Sort: Distance ↑</option>
+        <option value="distance_desc">Sort: Distance ↓</option>
+        <option value="name_asc">Name A–Z</option>
+      </select>
+      <button type="button" id="locate">Locate Me</button>
+      <button type="submit" id="apply">Apply</button>
+      <button type="button" id="reset">Reset</button>
+    </form>
+  </header>
+
+  <main>
+    <div id="map"></div>
+    <aside id="list"></aside>
+  </main>
+
+  <template id="card-tpl">
+    <article class="card">
+      <div class="card-head">
+        <h3 class="name"></h3>
+        <div>
+          <span class="rating"></span>
+          <button class="fav" title="Toggle favorite">♡</button>
+        </div>
+      </div>
+      <div class="addr"></div>
+      <div class="distance"></div>
+      <div class="tags"></div>
+    </article>
+  </template>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

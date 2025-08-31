@@ -1,0 +1,49 @@
+{
+  "shops": [
+    {
+      "id": 1,
+      "name": "Pothys",
+      "lat": 9.9198,
+      "lon": 78.1193,
+      "address": "Town Hall Road, Madurai",
+      "rating": 4.8,
+      "tags": ["textiles", "clothing", "silk"]
+    },
+    {
+      "id": 2,
+      "name": "Kumaran Silks",
+      "lat": 9.9215,
+      "lon": 78.1231,
+      "address": "South Masi Street, Madurai",
+      "rating": 4.7,
+      "tags": ["sarees", "silks", "clothing"]
+    },
+    {
+      "id": 3,
+      "name": "Reliance Trends",
+      "lat": 9.9284,
+      "lon": 78.1217,
+      "address": "Mattuthavani, Madurai",
+      "rating": 4.6,
+      "tags": ["fashion", "clothing", "lifestyle"]
+    },
+    {
+      "id": 4,
+      "name": "Big Bazaar",
+      "lat": 9.9342,
+      "lon": 78.1279,
+      "address": "KK Nagar, Madurai",
+      "rating": 4.5,
+      "tags": ["supermarket", "groceries", "household"]
+    },
+    {
+      "id": 5,
+      "name": "Saravana Stores",
+      "lat": 9.9182,
+      "lon": 78.1248,
+      "address": "North Masi Street, Madurai",
+      "rating": 4.4,
+      "tags": ["textiles", "electronics", "furniture"]
+    }
+  ]
+}
